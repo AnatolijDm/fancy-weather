@@ -2,7 +2,18 @@
   "name": "fancy-weather",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "for-in": "^1.0.2",
+    "get-value": "^2.0.6",
+    "graceful-fs": "^4.2.3"
+  },
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
   "scripts": {
     "webs": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
@@ -16,14 +27,5 @@
   "bugs": {
     "url": "https://github.com/AnatolijDm/fancy-weather/issues"
   },
-  "homepage": "https://github.com/AnatolijDm/fancy-weather#readme",
-  "devDependencies": {
-    "path": "^0.12.7",
-    "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
-  },
-  "dependencies": {
-    "eslint": "^6.8.0"
-  }
+  "homepage": "https://github.com/AnatolijDm/fancy-weather#readme"
 }
