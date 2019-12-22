@@ -9,9 +9,13 @@ document.querySelector('#search--button').onclick = function () {
 }
 
 document.querySelector('#current_place').onclick = function () {
+    if (localStorage.getItem('setCity') == null) {
+        localStorage.setItem('setCity', `Minsk`);
+    } else {
     let curCity = localStorage.getItem('currentCity');
     localStorage.setItem('setCity', `${curCity}`);
     window.location.reload (true);
+    }
 }
 
 window.onload  = function() {
